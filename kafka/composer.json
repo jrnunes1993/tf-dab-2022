@@ -1,0 +1,5 @@
+{
+    "require": {
+        "idealo/php-rdkafka-ffi": "^0.4.0"
+    }
+}
