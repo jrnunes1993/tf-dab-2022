@@ -6,7 +6,7 @@
 
 ```shell
 $ cd rabbitmq
-$ docker-compose up -d
+$ docker-compose --compatibility up -d
 ```
 
 #### Rodar aplicação de benchmark
@@ -24,7 +24,7 @@ $ java -jar perf-test-latest.jar
 
 ```shell
 $ cd kafka
-$ docker-compose up -d
+$ docker-compose --compatibility up -d
 ```
 
 
