@@ -4,6 +4,12 @@ services:
   kafka-tf:
     image: bitnami/kafka:latest
     container_name: 'kafka-tf'
+    deploy:
+      resources:
+        limits:
+          memory: 500M  # 50MB
+        reservations:
+          memory: 100M
     ports:
       - "9092:9092"
     environment:
@@ -22,6 +28,12 @@ services:
   zookeeper-tf:
     container_name: 'zookeeper-tf'
     image: bitnami/zookeeper:latest
+    deploy:
+      resources:
+        limits:
+          memory: 500M  # 50MB
+        reservations:
+          memory: 100M
     ports:
       - "2181:2181"
     environment:
